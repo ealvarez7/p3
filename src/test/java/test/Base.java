@@ -37,9 +37,6 @@ class Base {
         } else if (r < 0.11) {
             throw new AssumptionViolatedException("skipping");
         }
-	else {
-		System.out.println("r grater than 0.11");
-	}
     }
 
 }
