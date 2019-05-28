@@ -33,6 +33,9 @@ class Base {
         double r = Math.random();
         if (r < 0.1) {
             fail("oops");
+ 	   else if (r > 0.11) {
+		   system.out.println("r greater than 0.11");
+	   }
         } else if (r < 0.11) {
             throw new AssumptionViolatedException("skipping");
         }
